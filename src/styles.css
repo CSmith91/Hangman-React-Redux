@@ -1,0 +1,179 @@
+.App {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  float: left;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  font-size: 3.5vmin;
+}
+
+.wordContainer {
+  display: grid;
+  background-color: #eee;
+  border: 2px solid #333;
+  border-radius: 10px;
+  /* display: inline-block; */
+  margin: 20px;
+  padding: 20px;
+}
+
+.wordBoard {
+  display: flex;
+  justify-content: center;
+}
+
+.gallowsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer {
+  display: inline-block;
+  margin: 10px;
+}
+
+button {
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+  transition: background-color 0.5s;
+}
+
+button:hover {
+  background-color: #aaa;
+}
+
+.clicked {
+  background-color: #333;
+  color: #fff;
+}
+
+.unclicked:active {
+  background-color: rgb(214, 214, 214);
+  color: white;
+  transform: translateY(2px) translateX(2px);
+}
+
+.unclicked:hover {
+  transform: translateY(1px) translateX(1px);
+}
+
+.clicked:active {
+  background-color: black;
+  color: rgb(48, 48, 48);
+  transform: translateY(2px) translateX(2px);
+}
+
+.clicked:hover {
+  background-color: black;
+  color: rgb(109, 109, 109);
+}
+
+.startButton {
+  margin-bottom: 1%;
+  border-color: white;
+  margin-left: 1%;
+}
+
+.startButton:hover {
+  background-color: rgb(112, 47, 58);
+  transform: translateY(1px) translateX(1px);
+}
+
+.startButton:active {
+  transform: translateY(2px) translateX(2px);
+  color: rgb(161, 161, 161);
+}
+
+.new-Button {
+  margin-bottom: 1%;
+  margin-left: 1%;
+  border-color: white;
+  background-color: rgb(103, 146, 17);
+}
+
+.new-Button:hover {
+  background-color: rgb(179, 206, 125);
+  transform: translateY(1px) translateX(1px);
+}
+
+.new-Button:active {
+  transform: translateY(2px) translateX(2px);
+  color: rgb(161, 161, 161);
+}
+
+.help-btn {
+  margin-bottom: 1%;
+  margin-left: 3%;
+  border-color: white;
+}
+
+.help-btn:hover {
+  background-color: rgb(152, 95, 160);
+  transform: translateY(1px) translateX(1px);
+}
+
+.help-btn:active {
+  transform: translateY(2px) translateX(2px);
+  color: rgb(161, 161, 161);
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  z-index: 9999;
+  /* opacity: 0;
+  visibility: hidden; */
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.close-btn {
+  margin-top: 16px;
+  margin-left: 10px;
+}
