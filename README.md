@@ -93,6 +93,7 @@ The new game button allows the user to play a new game with a new random country
 
 ## Improvements
 The game's reset button could benefit from a confirmation popup to cover the event that a player accidentally presses it. It would be preferable for the new game button to reset the state to its initial state whilst indexing a new random countrym, rather than just refreshing the page.
+The CSS does not cater for the longest countries. There are about three countries in the list that are very long and over extend their container.
 
 ## Credits
 This project was made by me and is maintained by me. The list of countries is up to date as of 2023, which countries with special characters not included, and countries will multiple words listed as one single word.
